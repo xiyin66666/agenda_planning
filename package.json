@@ -1,0 +1,27 @@
+{
+  "name": "agenda-planner",
+  "version": "1.0.0",
+  "description": "Desktop Agenda Planning Application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win"
+  },
+  "author": "You",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^25.0.0",
+    "electron-builder": "^24.0.0"
+  },
+  "build": {
+    "appId": "com.you.agendaplanner",
+    "productName": "Agenda Planner",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "portable",
+      "icon": "icon.ico"
+    }
+  }
+}
